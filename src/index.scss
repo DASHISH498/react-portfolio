@@ -101,15 +101,33 @@ body {
 							}
 						}
 						&.hire-me {
+							position: relative;
 							padding: 17px 2.1875rem;
 							background-image: linear-gradient(90deg, #8750f7 0, #2a1454 51%, #8750f7);
 							background-size: 200%;
 							border-radius: 9999px;
 							color: #fff;
 							font-weight: 800;
+							transition: 0.5s;
 							&::after {
 								display: none;
 							}
+							// &:hover {
+							// 	transition: 0.5s;
+							// 	&::before {
+							// 		position: absolute;
+							// 		content: "";
+							// 		top: 0;
+							// 		left: 0;
+							// 		height: 100%;
+							// 		background-image: linear-gradient(90deg, #2a1454 0, #8750f7 51%, #8750f7);
+							// 		background-size: 200%;
+							// 		width: 100%;
+							// 		border-radius: 99px;
+							// 		transition: 0.5s;
+							// 		color: #fff;
+							// 	}
+							// }
 						}
 					}
 				}
@@ -124,7 +142,7 @@ body {
 		position: absolute;
 		content: "";
 		right: 0px;
-		top: -46px;
+		top: 0px;
 		background-image: linear-gradient(260deg, #8750f7, rgba(115, 67, 210, 0));
 		height: 19.25rem;
 		width: 20.125rem;
@@ -198,6 +216,60 @@ body {
 					transition: 0.5s;
 					&:hover {
 						transform: rotate(0);
+					}
+				}
+			}
+			.download {
+				position: relative;
+				font-weight: 600;
+				color: rgba(135, 80, 247, 1);
+				padding: 17px 2.1875rem;
+				border: 1px solid rgba(135, 80, 247, 1);
+				border-radius: 50px;
+				overflow: hidden;
+				z-index: 9;
+				&:hover {
+					color: #fff;
+					background-color: rgba(135, 80, 247, 1);
+					.fa {
+						color: #fff;
+					}
+				}
+			}
+			ul {
+				li {
+					position: relative;
+					height: 35px;
+					width: 35px;
+					place-items: center;
+					border: 1px solid rgba(135, 80, 247, 1);
+					border-radius: 50px;
+					text-align: center;
+					line-height: 35px;
+					cursor: pointer;
+					.fa {
+						position: relative;
+						color: rgba(135, 80, 247, 1);
+						z-index: 9;
+					}
+					&::after {
+						position: absolute;
+						content: "";
+						height: 35px;
+						width: 35px;
+						background-color: rgba(135, 80, 247, 1);
+						border-radius: 50px;
+						left: 0;
+						transition: 0.5s;
+						transform: scale(0);
+					}
+					&:hover {
+						.fa {
+							color: #fff;
+						}
+						&::after {
+							transform: scale(1);
+						}
 					}
 				}
 			}
