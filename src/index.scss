@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+body {
+	margin: 0;
+	width: 100%;
+	height: 100vh;
+	color: #fff;
+	// background: linear-gradient(-45deg, #072b40, #37738b);
+	background: rgba(15, 7, 21, 1);
+	background-size: 400% 400%;
+	animation: gradientBG 15s ease infinite;
+	font-family: "Work Sans", sans-serif;
+}
+
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* COMMON CSS CLASSES */
+.overflow-hidden {
+	overflow: hidden;
+}
+
+.container {
+	max-width: 1320px;
+	padding: 0;
+}
+
+.mx-w400 {
+	max-width: 400px;
+}
+
+.hidden {
+	display: none;
+}
+
+/* HEADER CSS */
+.header-parent {
+	padding: 15px 0px;
+    .header-container {
+		max-width: 1320px;
+		margin: 0 auto;
+		.logo {
+			h2 {
+				position: relative;
+				color: #fff;
+				font-weight: 500;
+				z-index: 9;
+				font-weight: 600;
+				span {
+					color: #fff;
+					font-weight: 800;
+					&::before {
+						position: absolute;
+						content: '';
+						left: -11px;
+						top: 0px;
+						height: 40px;
+						width: 40px;
+						border-radius: 50px;
+						background-color: #072b40;
+						color: #fff;
+						z-index: -1;
+					}
+				}
+			}
+		}
+		nav {
+			ul {
+				li {
+					a {
+						position: relative;
+						display: inline-block;
+						margin: 0.875rem 0rem;
+						padding: 5px 0px;
+						overflow: hidden;
+						&::after {
+							position: absolute;
+							content: "";
+							left: -100%;
+							right: 0;
+							bottom: 0px;
+							height: 0.125rem;
+							width: 100%;
+							background-image: linear-gradient(260deg, #2a1454, #8750f7);
+							border-radius: 2px;
+							transition: 0.5s;
+						}
+						&:hover {
+							&::after {
+								left: 0;
+							}
+						}
+						&.hire-me {
+							padding: 17px 2.1875rem;
+							background-image: linear-gradient(90deg, #8750f7 0, #2a1454 51%, #8750f7);
+							background-size: 200%;
+							border-radius: 9999px;
+							color: #fff;
+							font-weight: 800;
+							&::after {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* MAIN */
+.mains-section {
+	&::after {
+		position: absolute;
+		content: "";
+		right: 0px;
+		top: -46px;
+		background-image: linear-gradient(260deg, #8750f7, rgba(115, 67, 210, 0));
+		height: 19.25rem;
+		width: 20.125rem;
+		border-radius: 50%;
+		z-index: -1;
+		// margin-right: -5%;
+		filter: blur(150px);
+	}
+	.intro-text svg {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 46%;
+		top: 55%;
+		transform: translate(-50%, -50%) scale(1);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: -1;
+		animation: pulsate 3s ease-in-out infinite alternate;
+		text {
+			font-family: "Russo One", sans-serif;
+			text-transform: uppercase;
+			stroke-width: 1.2;
+			stroke: #8750f7;
+			fill: transparent;
+			font-size: 240px;
+			display: inline-block;
+			opacity: 0;
+		}
+		.animate-stroke {
+			font-family: "Russo One", sans-serif;
+			opacity: .7;
+			animation: stroke 4s;
+			stroke: #2a1454;
+		}
+	}
+	@keyframes pulsate {
+		0% {
+			transform: translate(-50%, -50%) scale(1);
+		}
+		50% {
+			transform: translate(-50%, -50%) scale(1.05);
+		}
+		100% {
+			transform: translate(-50%, -50%) scale(1);
+		}
+	}
+	.container {
+		.column-group {
+			display: grid;
+			grid-template-columns: repeat(2,minmax(0,1fr));
+			gap: 1.875rem;
+			align-items: center;
+			padding: 80px 0px;
+			div > h1 {
+				background-image: linear-gradient(90deg, #8750f7 0, #fff);
+				color: transparent;
+				background-clip: text;
+				font-size: 4rem;
+				font-weight: 800;
+			}
+			.profile {
+				margin: 0 auto;
+				.image-container {
+					border: 1px solid #ad8feb;
+					border-radius: 30px;
+					overflow: hidden;
+					width: fit-content;
+					transform: rotate(6deg);
+					transition: 0.5s;
+					&:hover {
+						transform: rotate(0);
+					}
+				}
+			}
+		}
+	}
+}
