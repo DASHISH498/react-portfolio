@@ -35,12 +35,24 @@ body {
 	padding: 0;
 }
 
-.mx-w400 {
+.max-w-400px {
 	max-width: 400px;
+}
+
+.max-w-700px {
+	max-width: 700px;
+}
+
+.max-w-500px {
+	max-width: 500px;
 }
 
 .hidden {
 	display: none;
+}
+
+.gap-15 {
+	gap: 15rem;
 }
 
 /* HEADER CSS */
@@ -61,13 +73,15 @@ body {
 					font-weight: 800;
 					&::before {
 						position: absolute;
-						content: '';
-						left: -11px;
-						top: 0px;
-						height: 40px;
-						width: 40px;
+						content: "";
+						left: -17px;
+						top: -4px;
+						height: 50px;
+						width: 50px;
 						border-radius: 50px;
 						background-color: #072b40;
+						border: 1px solid #fff;
+						border-right: 0;
 						color: #fff;
 						z-index: -1;
 					}
@@ -271,6 +285,35 @@ body {
 							transform: scale(1);
 						}
 					}
+				}
+			}
+		}
+	}
+}
+
+#service {
+	background-color: rgba(5, 7, 9, 1);
+	.service-padding {
+		padding: 90px 0px;
+		.heading {
+			padding-bottom: 90px;
+			h2 {
+				background-image: linear-gradient(90deg, #8750f7 0, #fff);
+				background-clip: text;
+			}
+		}
+		.service-weight {
+			.service-item {
+				border-bottom: 1px solid rgba(42, 20, 84, 1);
+				padding: 0px 15px;
+				transition: 0.5s ease-in-out;
+				.left {
+					width: calc(40% - 115px);
+				}
+				&:hover {
+					background-image: linear-gradient(90deg, #8750f7 0, #2a1454 51%, #8750f7);
+					background-size: 200%;
+					transition: 0.5s ease-in-out;
 				}
 			}
 		}
