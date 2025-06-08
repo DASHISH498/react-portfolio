@@ -1,5 +1,6 @@
 import React from "react";
 import Tabings from "./Tabings";
+import profileImage from './assets/profile.jpg';
 
 function Mains() {
   return (
@@ -30,7 +31,8 @@ function Mains() {
                     </div>
                     <div className="profile">
                         <div className="image-container">
-                            <img src="https://dashishsoni.in/assets/images/profile.jpg" alt="" />
+                            {/* <img src="/img/profile.jpg" alt="" /> */}
+                            <img src={profileImage} alt={"profile"}/>
                         </div>
                     </div>
                 </div>
