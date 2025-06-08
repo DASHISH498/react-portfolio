@@ -1,7 +1,10 @@
-import { React } from 'react'
+import { React, useState } from 'react'
 import './index.scss'
 
 function Header() {
+  const navs = ["Services", "Work", "Resume", "Skills", "Testimonials", "Contact"];
+  const [navTab, setNavTab] = useState('Services');
+
   return (
     <header>
         <div className="header-parent">
@@ -11,7 +14,7 @@ function Header() {
                 </div>
                 <nav>
                   <ul className="list-unstyled p-0 m-0 d-flex align-items-center gap-5">
-                    <li className="nav-item"><a className="text-decoration-none fw-semibold text-white" href="#services">Services</a></li>
+                    <li className="nav-item"><a className="text-decoration-none fw-semibold text-white" href="#services">Service</a></li>
                     <li className="nav-item"><a className="text-decoration-none fw-semibold text-white" href="#work">Work</a></li>
                     <li className="nav-item"><a className="text-decoration-none fw-semibold text-white" href="#resume">Resume</a></li>
                     <li className="nav-item"><a className="text-decoration-none fw-semibold text-white" href="#skills">Skills</a></li>

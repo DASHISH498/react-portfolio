@@ -319,3 +319,54 @@ body {
 		}
 	}
 }
+
+#portfolio {
+	// background-color: rgba(5, 7, 9, 1);
+	background-color: linear-gradient(260deg, #8750f7, rgba(115, 67, 210, 0));
+	.portfolio-padding {
+		padding: 90px 0px;
+		.heading {
+			padding-bottom: 90px;
+			h2 {
+				background-image: linear-gradient(90deg, #8750f7 0, #fff);
+				background-clip: text;
+			}
+		}
+		.portfolio-weight {
+			.service-item {
+				border-bottom: 1px solid rgba(42, 20, 84, 1);
+				padding: 0px 15px;
+				transition: 0.5s ease-in-out;
+				.left {
+					width: calc(40% - 115px);
+				}
+				&:hover {
+					background-image: linear-gradient(90deg, #8750f7 0, #2a1454 51%, #8750f7);
+					background-size: 200%;
+					transition: 0.5s ease-in-out;
+				}
+			}
+		}
+	}
+}
+
+/* TABNING CODE IS HERE */
+.tabing-container {
+	.button-container {
+		display: flex;
+		gap: 15px;
+		justify-content: center;
+		padding: 10px 20px;
+		border-radius: 50px;
+		background-color: #000;
+	}
+	button {
+		border-radius: 10px;
+		border-radius: 50px;
+		transition: 0.5s;
+		&.active {
+			background: linear-gradient(260deg, #2a1454 0, #8750f7);
+			transition: 0.5s;
+		}
+	}
+}

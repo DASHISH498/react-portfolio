@@ -1,4 +1,5 @@
-import React from 'react'
+import React from "react";
+import Tabings from "./Tabings";
 
 function Mains() {
   return (
@@ -102,6 +103,17 @@ function Mains() {
                             </a>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio">
+            <div className="container">
+                <div className="portfolio-padding">
+                    <div className="heading text-center flex flex-col items-center">
+                        <h2 className="animate__animated animate__bounce text-transparent text-5xl font-bold leading-tight">My Recent Works</h2>
+                        <p className="m-0 max-w-700px">We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.</p>
+                    </div>
+                    <Tabings />
                 </div>
             </div>
         </section>
