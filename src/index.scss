@@ -33,6 +33,7 @@ body {
 .container {
 	max-width: 1320px;
 	padding: 0;
+	margin: 0 auto;
 }
 
 .max-w-400px {
@@ -68,6 +69,7 @@ body {
 				font-weight: 500;
 				z-index: 9;
 				font-weight: 600;
+				font-size: 1.6rem;
 				span {
 					color: #fff;
 					font-weight: 800;
