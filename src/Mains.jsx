@@ -1,6 +1,7 @@
 import React from "react";
 import Tabings from "./Tabings";
 import profileImage from './assets/profile.jpg';
+import Projectcards from "./Projectcards";
 
 function Mains() {
   return (
@@ -17,7 +18,7 @@ function Mains() {
                         <p className="max-w-400px">I break down complex user experinece problems to create integritiy focussed solutions that connect billions of people</p>
                         <div className="mt-5 flex align-item-center gap-4">
                             <div>
-                                <a href="" className="download flex items-center text-decoration-none">Download CV <i className="ms-2 fa fa-download"></i></a>
+                                <a href="/Ashish - Front End Developer.pdf" download="Ashish - Front End Developer.pdf" className="download flex items-center text-decoration-none" >Download CV <i className="ms-2 fa fa-download"></i></a>
                             </div>
                             <div className="flex">
                                 <ul className="flex items-center gap-3 list-unstyled p-0 m-0">
@@ -115,7 +116,10 @@ function Mains() {
                         <h2 className="animate__animated animate__bounce text-transparent text-5xl font-bold leading-tight">My Recent Works</h2>
                         <p className="m-0 max-w-700px">We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.</p>
                     </div>
-                    <Tabings />
+                    {/* <Tabings /> */}
+                    <div className="project-cards">
+                        <Projectcards />
+                    </div>
                 </div>
             </div>
         </section>
