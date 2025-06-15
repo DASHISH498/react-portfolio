@@ -293,6 +293,14 @@ body {
 	}
 }
 
+.funfact-area {
+	li {
+		span {
+			font-family: "Russo One", sans-serif;
+		}
+	}
+}
+
 #service {
 	background-color: rgba(5, 7, 9, 1);
 	.service-padding {
@@ -348,6 +356,35 @@ body {
 					transition: 0.5s ease-in-out;
 				}
 			}
+		}
+	}
+}
+
+#experience {
+	background-color: rgba(5, 7, 9, 1);
+	.experience-padding {
+		padding: 90px 0px;
+		.heading {
+			padding-bottom: 90px;
+			h2 {
+				background-image: linear-gradient(90deg, #8750f7 0, #fff);
+				background-clip: text;
+			}
+		}
+	}
+	.experience-card {
+		background-color: rgba(20, 12, 28, 1);
+		padding: 30px;
+		border-radius: 20px;
+		&:hover {
+			background-image: linear-gradient(90deg, #8750f7 0, #2a1454 51%, #8750f7);
+			background-size: 200%;
+			span {
+				color: #fff;
+			}
+		}
+		span {
+			color: rgba(135, 80, 247, 1);
 		}
 	}
 }

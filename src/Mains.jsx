@@ -2,6 +2,7 @@ import React from "react";
 import Tabings from "./Tabings";
 import profileImage from './assets/profile.jpg';
 import Projectcards from "./Projectcards";
+import Experience from "./Experience";
 
 function Mains() {
   return (
@@ -65,7 +66,7 @@ function Mains() {
             <div className="container">
                 <div className="service-padding">
                     <div className="heading text-center flex flex-col items-center">
-                        <h2 className="animate__animated animate__bounce text-transparent text-5xl font-bold leading-tight">My Quality Service</h2>
+                        <h2 className="text-transparent text-5xl font-bold leading-tight">My Quality Service</h2>
                         <p className="m-0 max-w-700px">We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.</p>
                     </div>
                     <div className="service-weight relative">
@@ -120,6 +121,17 @@ function Mains() {
                     <div className="project-cards">
                         <Projectcards />
                     </div>
+                </div>
+            </div>
+        </section>
+        <section id="experience">
+            <div className="container">
+                <div className="experience-padding">
+                    <div className="heading text-center flex flex-col items-center">
+                        <h2 className="text-transparent text-5xl font-bold leading-tight">My Experience</h2>
+                        <p className="m-0 max-w-700px">We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.</p>
+                    </div>
+                    <Experience />
                 </div>
             </div>
         </section>
