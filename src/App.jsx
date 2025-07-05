@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from 'react';
-// ... baaki components import karo
+import Header from './Header';
+import Mains from './Mains';
+
+// import './App.scss'; // make sure your CSS is loaded here
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading delay
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 2000); // 2 seconds (adjust as needed)
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -17,12 +19,12 @@ function App() {
     <>
       {isLoading ? (
         <div className="loading-screen">
-          <h1>Website is Under Process...</h1>
+          <h1>Website is Under Maintenance...</h1>
         </div>
       ) : (
         <>
           <Header />
-          {/* baaki sections yahan */}
+          <Mains />
         </>
       )}
     </>

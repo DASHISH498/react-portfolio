@@ -13,6 +13,33 @@ body {
 	font-family: "Work Sans", sans-serif;
 }
 
+.loading-screen {
+	height: 100vh;
+	width: 100vw;
+	background-color: #111; // Dark background
+	color: #fff;            // White text
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+	font-weight: bold;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	transition: opacity 0.3s ease-in-out;
+  }
+  .loading-screen h1 {
+	animation: blink 1s infinite;
+	letter-spacing: 1px;
+  }
+  
+  @keyframes blink {
+	0%, 100% { opacity: 1; }
+	50% { opacity: 0.5; }
+  }
+	
+
 @keyframes gradientBG {
 	0% {
 		background-position: 0% 50%;
