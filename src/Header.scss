@@ -1,0 +1,63 @@
+// Add below styles in index.scss
+
+.hamburger {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+  display: none;
+}
+
+// Show hamburger on small screens
+@media (max-width: 768px) {
+  nav, .hide-768 {
+    display: none;
+  }
+  .hamburger, nav.open-nav {
+    display: block;
+  }
+  .header-parent {
+    .header-container {
+      padding: 0px 30px;
+    }
+  }
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #111;
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    z-index: 999;
+  }
+
+  .nav-menu.nav-menu-open {
+    display: flex;
+  }
+
+  .nav-menu .nav-item a {
+    color: white;
+    font-size: 16px;
+  }
+  .mains-section {
+    .container {
+      .column-group {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        padding: 40px 15px;
+        div {
+          h4 {
+            font-size: 40px;
+            font-family: "Work Sans", sans-serif;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}

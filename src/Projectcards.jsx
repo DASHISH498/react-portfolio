@@ -36,7 +36,7 @@ function Projectcards() {
     return (
         <>
             <a href="{project.link}">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 md:px-20">
                     {projects.map((project, index) => (
                         <div
                         key={index}

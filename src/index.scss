@@ -44,8 +44,8 @@ body {
 	max-width: 700px;
 }
 
-.max-w-500px {
-	max-width: 500px;
+.max-w-630px {
+	max-width: 630px;
 }
 
 .hidden {
@@ -56,6 +56,16 @@ body {
 	gap: 15rem;
 }
 
+.section-padding {
+	padding: 90px 0px;
+	.heading {
+		padding-bottom: 90px;
+		h2 {
+			background-image: linear-gradient(90deg, #8750f7 0, #fff);
+			background-clip: text;
+		}
+	}
+}
 /* HEADER CSS */
 .header-parent {
 	padding: 15px 0px;
@@ -303,15 +313,7 @@ body {
 
 #service {
 	background-color: rgba(5, 7, 9, 1);
-	.service-padding {
-		padding: 90px 0px;
-		.heading {
-			padding-bottom: 90px;
-			h2 {
-				background-image: linear-gradient(90deg, #8750f7 0, #fff);
-				background-clip: text;
-			}
-		}
+	.section-padding {
 		.service-weight {
 			.service-item {
 				border-bottom: 1px solid rgba(42, 20, 84, 1);
@@ -333,15 +335,7 @@ body {
 #portfolio {
 	// background-color: rgba(5, 7, 9, 1);
 	background-color: linear-gradient(260deg, #8750f7, rgba(115, 67, 210, 0));
-	.portfolio-padding {
-		padding: 90px 0px;
-		.heading {
-			padding-bottom: 90px;
-			h2 {
-				background-image: linear-gradient(90deg, #8750f7 0, #fff);
-				background-clip: text;
-			}
-		}
+	.section-padding {
 		.portfolio-weight {
 			.service-item {
 				border-bottom: 1px solid rgba(42, 20, 84, 1);
@@ -362,30 +356,33 @@ body {
 
 #experience {
 	background-color: rgba(5, 7, 9, 1);
-	.experience-padding {
-		padding: 90px 0px;
-		.heading {
-			padding-bottom: 90px;
-			h2 {
-				background-image: linear-gradient(90deg, #8750f7 0, #fff);
-				background-clip: text;
+	.section-padding {
+		.experience-card {
+			background-color: rgba(20, 12, 28, 1);
+			padding: 30px;
+			border-radius: 20px;
+			&:hover {
+				background-image: linear-gradient(90deg, #8750f7 0, #2a1454 51%, #8750f7);
+				background-size: 200%;
+				span {
+					color: #fff;
+				}
+			}
+			span {
+				color: rgba(135, 80, 247, 1);
 			}
 		}
 	}
-	.experience-card {
+}
+
+#skills {
+	.skill-card {
 		background-color: rgba(20, 12, 28, 1);
-		padding: 30px;
-		border-radius: 20px;
-		&:hover {
-			background-image: linear-gradient(90deg, #8750f7 0, #2a1454 51%, #8750f7);
-			background-size: 200%;
-			span {
-				color: #fff;
-			}
-		}
-		span {
-			color: rgba(135, 80, 247, 1);
-		}
+		padding: 25px;
+		display: grid;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
 	}
 }
 

@@ -3,6 +3,8 @@ import Tabings from "./Tabings";
 import profileImage from './assets/profile.jpg';
 import Projectcards from "./Projectcards";
 import Experience from "./Experience";
+import Services from "./Services";
+import Skills from "./Skills";
 
 function Mains() {
   return (
@@ -24,7 +26,7 @@ function Mains() {
                             <div className="flex">
                                 <ul className="flex items-center gap-3 list-unstyled p-0 m-0">
                                     <li className="overflow-hidden"><i className="fa fa-twitter"></i></li>
-                                    <li className="overflow-hidden"><i className="fa fa-facebook"></i></li>
+                                    <li className="overflow-hidden"><i className="fa fa-linkedin"></i></li>
                                     <li className="overflow-hidden"><i className="fa fa-instagram"></i></li>
                                     <li className="overflow-hidden"><i className="fa fa-github"></i></li>
                                 </ul>
@@ -64,55 +66,18 @@ function Mains() {
         </section>
         <section id="service">
             <div className="container">
-                <div className="service-padding">
+                <div className="section-padding">
                     <div className="heading text-center flex flex-col items-center">
                         <h2 className="text-transparent text-5xl font-bold leading-tight">My Quality Service</h2>
                         <p className="m-0 max-w-700px">We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.</p>
                     </div>
-                    <div className="service-weight relative">
-                        <div className="service-item px-15px lg:px-30px border-b border-body-color dark:border-seondary-color relative z-10 group wow fadeInUp">
-                            <a href="" className="no-underline text-white flex items-center flex-wrap py-4 gap-15">
-                                <span className="left flex flex-wrap gap-4 items-center">
-                                    <b className="service-sl-num text-primary-color group-hover:text-white transition-all duration-300">01</b>
-                                    <b className="text-xl md:text-size-25 lg:text-3xl">Web Devlopment</b>
-                                </span>
-                                <span className="text-primary-color-light text-white max-w-500px">Ensure your website looks great on any device,with layouts that adapt to different screen sizes seamlessly.</span>
-                            </a>
-                        </div>
-                        <div className="service-item px-15px lg:px-30px border-b border-body-color dark:border-seondary-color relative z-10 group wow fadeInUp">
-                            <a href="" className="no-underline text-white flex items-center flex-wrap py-4 gap-15">
-                                <span className="left flex flex-wrap gap-4 items-center">
-                                    <b className="service-sl-num text-primary-color group-hover:text-white transition-all duration-300">02</b>
-                                    <b className="text-xl md:text-size-25 lg:text-3xl">Responsive Design</b>
-                                </span>
-                                <span className="text-primary-color-light text-white max-w-500px">Ensure your website looks great on any device,with layouts that adapt to different screen sizes seamlessly.</span>
-                            </a>
-                        </div>
-                        <div className="service-item px-15px lg:px-30px border-b border-body-color dark:border-seondary-color relative z-10 group wow fadeInUp">
-                            <a href="" className="no-underline text-white flex items-center flex-wrap py-4 gap-15">
-                                <span className="left flex flex-wrap gap-4 items-center">
-                                    <b className="service-sl-num text-primary-color group-hover:text-white transition-all duration-300">03</b>
-                                    <b className="text-xl md:text-size-25 lg:text-3xl">Clean Code</b>
-                                </span>
-                                <span className="text-primary-color-light text-white max-w-500px">Ensure your website looks great on any device,with layouts that adapt to different screen sizes seamlessly.</span>
-                            </a>
-                        </div>
-                        <div className="service-item px-15px lg:px-30px border-b border-body-color dark:border-seondary-color relative z-10 group wow fadeInUp">
-                            <a href="" className="no-underline text-white flex items-center flex-wrap py-4 gap-15">
-                                <span className="left flex flex-wrap gap-4 items-center">
-                                    <b className="service-sl-num text-primary-color group-hover:text-white transition-all duration-300">04</b>
-                                    <b className="text-xl md:text-size-25 lg:text-3xl">UI/UX Design</b>
-                                </span>
-                                <span className="text-primary-color-light text-white max-w-500px">Ensure your website looks great on any device,with layouts that adapt to different screen sizes seamlessly.</span>
-                            </a>
-                        </div>
-                    </div>
+                    <Services />
                 </div>
             </div>
         </section>
         <section id="portfolio">
             <div className="container">
-                <div className="portfolio-padding">
+                <div className="section-padding">
                     <div className="heading text-center flex flex-col items-center">
                         <h2 className="animate__animated animate__bounce text-transparent text-5xl font-bold leading-tight">My Recent Works</h2>
                         <p className="m-0 max-w-700px">We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.</p>
@@ -126,12 +91,23 @@ function Mains() {
         </section>
         <section id="experience">
             <div className="container">
-                <div className="experience-padding">
+                <div className="section-padding">
                     <div className="heading text-center flex flex-col items-center">
                         <h2 className="text-transparent text-5xl font-bold leading-tight">My Experience</h2>
                         <p className="m-0 max-w-700px">We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.</p>
                     </div>
                     <Experience />
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <div className="container">
+                <div className="section-padding">
+                    <div className="heading text-center flex flex-col items-center">
+                        <h2 className="animate__animated animate__bounce text-transparent text-5xl font-bold leading-tight">My Skills</h2>
+                        <p className="m-0 max-w-700px">We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.</p>
+                    </div>
+                    <Skills />
                 </div>
             </div>
         </section>
