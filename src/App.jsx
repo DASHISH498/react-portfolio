@@ -23,8 +23,7 @@ function App() {
         </div>
       ) : (
         <>
-          <Header />
-          <Mains />
+          
         </>
       )}
     </>

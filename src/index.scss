@@ -403,6 +403,11 @@ body {
 }
 
 #skills {
+	.skill-parent {
+		display: flex;
+		align-items: center;
+		gap: 30px;
+	}
 	.skill-card {
 		background-color: rgba(20, 12, 28, 1);
 		padding: 25px;
@@ -410,6 +415,35 @@ body {
 		align-items: center;
 		justify-content: center;
 		text-align: center;
+		width: 250px;
+		height: 200px;
+		border: 1px solid transparent;
+		transition: 0.5s;
+		.percent, .name {
+			margin-top: 10px;
+			font-weight: bold;
+			color: rgba(116, 119, 121, 1);
+			transition: 0.5s;
+		}
+		.name {
+			margin-top: 0;
+		}
+		&:hover {
+			border: 1px solid rgba(135, 80, 247, 1);
+			background-color: rgba(42, 20, 84, 1);
+			.percent, .name {
+				color: rgba(135, 80, 247, 1);
+				transform: scale(1.1);
+			}
+			svg {
+				transform: scale(1.2);
+			}
+		}
+		svg {
+			margin: 0 auto;
+			width: 100%;
+			transition: 0.5s;
+		}
 	}
 }
 

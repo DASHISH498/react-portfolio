@@ -1,10 +1,10 @@
 import React from "react";
 import Tabings from "./Tabings";
 import profileImage from './assets/profile.jpg';
-import Projectcards from "./Projectcards";
-import Experience from "./Experience";
-import Services from "./Services";
-import Skills from "./Skills";
+import Projectcards from "./subcomponent/Projectcards";
+import Experience from "./subcomponent/Experience";
+import Services from "./subcomponent/Services";
+import Skills from "./subcomponent/Skills";
 
 function Mains() {
   return (
